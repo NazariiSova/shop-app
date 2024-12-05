@@ -1,31 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts } from '../redux/features/productsSlice';
-import { RootState, AppDispatch } from '../redux/store';
+import { useSelector } from 'react-redux';
+import { RootState } from '../redux/store';
 
 const ProductDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const dispatch: AppDispatch = useDispatch();
-  const products = useSelector((state: RootState) => state.products.products);
-  const product = products.find((p) => p.id === parseInt(id || '', 10));
+  const product = useSelector((state: RootState) =>
+    state.products.products.find((p) => p.id === Number(id))
+  );
 
-  useEffect(() => {
-    if (products.length === 0) {
-      dispatch(fetchProducts());
-    }
-  }, [dispatch, products.length]);
+  const [isEditOpen, setEditOpen] = useState(false);
 
-  if (!product) {
-    return <p>Loading product details...</p>;
-  }
+  if (!product) return <p>Product not found.</p>;
 
   return (
     <div>
       <h1>{product.name}</h1>
       <img src={product.imageUrl} alt={product.name} />
       <p>Count: {product.count}</p>
-      <p>Size: {product.size.width} x {product.size.height}</p>
       <p>Weight: {product.weight}</p>
       <h2>Comments</h2>
       <ul>
@@ -36,6 +28,8 @@ const ProductDetailsPage: React.FC = () => {
           </li>
         ))}
       </ul>
+      <button onClick={() => setEditOpen(true)}>Edit Product</button>
+      {/* Add EditProductModal */}
     </div>
   );
 };
