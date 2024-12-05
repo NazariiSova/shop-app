@@ -1,0 +1,54 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Ноутбук Lenovo",
+        "count": 10,
+        "imageUrl": "scr/img/lenovo.jpg",
+        "size": {
+          "width": 350,
+          "height": 250
+        },
+        "weight": "1.5 кг",
+        "comments": [
+          {
+            "id": 1,
+            "productId": 1,
+            "description": "Чудовий ноутбук, швидка доставка",
+            "date": "14:00 22.08.2021"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Смартфон Apple iPhone",
+        "count": 5,
+        "imageUrl": "scr/img/iphone.png", 
+        "size": {
+          "width": 150,
+          "height": 75
+        },
+        "weight": "200 г",
+        "comments": [
+          {
+            "id": 2,
+            "productId": 2,
+            "description": "Крутий телефон, рекомендую",
+            "date": "16:30 15.09.2021"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Бездротові навушники",
+        "count": 15,
+        "imageUrl": "scr/img/tws.png",
+        "size": {
+          "width": 50,
+          "height": 50
+        },
+        "weight": "50 г",
+        "comments": []
+      }
+    ]
+  }
