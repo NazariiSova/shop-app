@@ -5,8 +5,8 @@ import commentsReducer from './features/commentsSlice';
 export const store = configureStore({
   reducer: {
     products: productsReducer,
-    comments: commentsReducer
-  }
+    comments: commentsReducer,
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

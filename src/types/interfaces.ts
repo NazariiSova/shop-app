@@ -1,12 +1,20 @@
-export interface Comment {
+export interface Product {
+    id: number;
+    name: string;
+    count: number;
+    imageUrl: string;
+    size: {
+      width: number;
+      height: number;
+    };
+    weight: string;
+    comments: Comment[];
+  }
+  
+  export interface Comment {
     id: number;
     productId: number;
-    content: string;
-    author: string;
+    description: string;
+    date: string;
   }
-  export interface Product {
-    id: number;
-    productId: number;
-    content: string;
-    author: string;
-  }
+  

@@ -2,52 +2,52 @@
     "products": [
       {
         "id": 1,
-        "name": "Ноутбук Lenovo",
+        "name": "Lenovo",
         "count": 10,
         "imageUrl": "scr/img/lenovo.jpg",
         "size": {
           "width": 350,
           "height": 250
         },
-        "weight": "1.5 кг",
+        "weight": "1.5 kg",
         "comments": [
           {
             "id": 1,
             "productId": 1,
-            "description": "Чудовий ноутбук, швидка доставка",
+            "description": "perfect leptop",
             "date": "14:00 22.08.2021"
           }
         ]
       },
       {
         "id": 2,
-        "name": "Смартфон Apple iPhone",
+        "name": "Apple iPhone",
         "count": 5,
         "imageUrl": "scr/img/iphone.png", 
         "size": {
           "width": 150,
           "height": 75
         },
-        "weight": "200 г",
+        "weight": "200 g",
         "comments": [
           {
             "id": 2,
             "productId": 2,
-            "description": "Крутий телефон, рекомендую",
+            "description": "good phone",
             "date": "16:30 15.09.2021"
           }
         ]
       },
       {
         "id": 3,
-        "name": "Бездротові навушники",
+        "name": "JBL TWS",
         "count": 15,
         "imageUrl": "scr/img/tws.png",
         "size": {
           "width": 50,
           "height": 50
         },
-        "weight": "50 г",
+        "weight": "50 g",
         "comments": []
       }
     ]
