@@ -4,7 +4,7 @@
         "id": 1,
         "name": "Lenovo",
         "count": 10,
-        "imageUrl": "scr/img/lenovo.jpg",
+        "imageUrl": "/img/lenovo.jpg",
         "size": {
           "width": 350,
           "height": 250
@@ -23,7 +23,7 @@
         "id": 2,
         "name": "Apple iPhone",
         "count": 5,
-        "imageUrl": "scr/img/iphone.png", 
+        "imageUrl": "/img/iphone.png", 
         "size": {
           "width": 150,
           "height": 75
@@ -42,7 +42,7 @@
         "id": 3,
         "name": "JBL TWS",
         "count": 15,
-        "imageUrl": "scr/img/tws.png",
+        "imageUrl": "/img/tws.jpg",
         "size": {
           "width": 50,
           "height": 50
